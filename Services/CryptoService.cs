@@ -3,11 +3,9 @@
     using System;
     using System.Security.Cryptography;
     using System.Text;
-#pragma warning disable SYSLIB0021
     public class CryptoService
     {
         private static readonly string NeaKey = "gV3X6c07KZRt620cdT2c0oA1";
-
         public static string DESEncrypt(string stringToEncrypt)
         {
             if (string.IsNullOrEmpty(stringToEncrypt))
@@ -50,6 +48,4 @@
             return Encoding.UTF8.GetString(decryptedBytes);
         }
     }
-#pragma warning restore SYSLIB0021
-
 }
